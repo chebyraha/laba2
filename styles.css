@@ -1,0 +1,150 @@
+body {
+    max-width: 1024px;
+    max-height: 870px;
+}
+header {
+    top: 0px;
+    left:0px;
+    width: 1024px;
+    height: 190px;
+    background: #2f4b6e 0% 0% no-repeat padding-box;
+    opacity: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+.container2 {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+   
+}
+
+.data {
+    margin-left: 10px;
+  
+}
+.img1 {
+    width: 13px;
+    height: 10px;
+    opacity: 1;
+}
+.img2 {
+    width: 13px;
+    height: 13px;
+    opacity: 1;
+}
+.img3{
+    width: 11px;
+    height: 14px;
+    opacity: 1;
+}
+
+ /* .ava{
+    width: 100px;
+    height: 57.735px;
+    background: #376daf;
+    position: relative;
+ }
+ .ava:before {
+    content: "";
+    position: absolute;
+    top: -28.8675px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 28.8675px solid #376daf;
+ }
+
+ .ava:after {
+    content: "";
+    position: absolute;
+    bottom: -28.8675px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 28.8675px solid #376daf;
+ } */
+
+ .container1 {
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+ }
+.name {
+    top: 78px;
+    left: 339px;
+    width: 161px;
+    height: 18px;
+    text-align: left;
+    text-transform: uppercase;
+    font: normal normal bold 13px/18px Open Sans;
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
+    margin: 5px 0px;
+}
+ 
+
+.position {
+    top: 98px;
+    left: 340px;
+    width: 71px;
+    height: 14px;
+    text-align: left;
+    font: normal normal normal 10px/14px Open Sans;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    margin: 0;
+
+}
+
+
+.email {
+    top: 65px;
+    left: 667px;
+    width: 111px;
+    height: 14px;
+    text-align: left;
+    font: normal normal normal 10px/14px Open Sans;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.number {
+    top: 87px;
+    left: 667px;
+    width: 63px;
+    height: 14px;
+    text-align: left;
+    font: normal normal normal 10px/14px Open Sans;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+
+.local {
+    top: 110px;
+    left: 667px;
+    width: 89px;
+    height: 14px;   
+    text-align: left;
+    font: normal normal normal 10px/14px Open Sans;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
