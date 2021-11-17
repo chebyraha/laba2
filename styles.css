@@ -304,6 +304,13 @@ header {
     left: 0;
 }
 
+.info2 .infoD li::after {
+    content: url(./Group\ 44.png);
+    position: absolute;
+    right: 8px;
+    bottom: -3px;
+} 
+
 .text {
     text-align: left;
     font: normal normal normal 10px/14px Open Sans;
@@ -358,3 +365,37 @@ header {
 .academ p {
     padding-left: 25px;
 }
+
+.work_h {
+    position: relative;
+}
+
+.work_h .vl {
+    position: absolute;
+    border-left: 2px solid #1c88f3;
+    height: 95px;
+    left: 20px;
+    top: 15px;
+
+  }
+
+  .academ {
+      position: relative;
+  }
+
+  .academ .vl {
+    position: absolute;
+    border-left: 2px solid #1c88f3;
+    height: 105px;
+    left: 20px;
+    top: 15px;
+
+  }
+
+  .academ .vl2 {
+    position: absolute;
+    border-left: 2px solid #1c88f3;
+    height: 80px;
+    left: 20px;
+    top: 136px;
+  }
