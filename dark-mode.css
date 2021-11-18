@@ -1,6 +1,6 @@
 body {
     max-width: 1024px;
-    max-height: 870px;
+    max-height: 1000px;
 
 }
 header {
@@ -155,6 +155,7 @@ button:hover {
 
 .box {
     width: 1024px;
+    height: 750px;
     display: flex;
     justify-content: space-evenly;
     background: #3B3B3B;
