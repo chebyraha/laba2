@@ -1,0 +1,424 @@
+body {
+    max-width: 1024px;
+    max-height: 870px;
+
+}
+header {
+    top: 0px;
+    left:0px;
+    width: 1024px;
+    height: 190px;
+    background: #2f4b6e 0% 0% no-repeat padding-box;
+    opacity: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    position: relative;
+}
+
+button {
+    position: fixed;
+    left: 1em;
+    padding: 8px;
+    background-color: #3B3B3B;
+    color: rgb(233, 233, 233);
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    margin-top: 1%;
+    outline: none;
+    transition-duration: 1s;
+}
+
+button:hover {
+    background: #597392;
+}
+
+/* container1 */
+
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 150px;
+ }
+
+ .ava {
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); 
+ }
+
+.bio {
+    margin-left: 10px;
+ }
+
+.name {
+    width: 161px;
+    height: 18px;
+    text-transform: uppercase;
+    font: normal normal bold 13px/18px Open Sans;
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
+    margin: 5px 0px;
+}
+ 
+.position {
+    width: 71px;
+    height: 14px;
+    font: normal normal normal 10px/14px Open Sans;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    margin: 0;
+}
+
+/* container2 */
+.container2 {
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    flex-wrap: wrap;
+    margin-right: 150px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font: normal normal normal 10px/14px Open sans;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.logo ul { 
+    margin: 5px 0px 5px 10px;
+}
+
+.logo .mail {
+    list-style: none;
+    padding-left: 15px;
+}
+.logo  .mail li {
+    position: relative;
+    padding-left: 25px;
+
+}
+
+.logo .mail li::before{
+    content: url(./feather\ mail.png);
+    position: absolute;
+    left: -1px;
+    top: 2px;
+    
+}
+
+.logo .phone {
+    list-style: none;
+    padding-left: 15px;
+}
+.logo  .phone li {
+    position: relative;
+    padding-left: 25px;
+
+}
+
+.logo .phone li::before{
+    content: url(./feather\ phone.png);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.logo .map {
+    list-style: none;
+    padding-left: 15px;
+}
+.logo  .map li {
+    position: relative;
+    padding-left: 25px;
+
+}
+
+.logo .map li::before{
+    content: url(./feather\ map\ pin.png);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* body */
+
+.box {
+    width: 1024px;
+    display: flex;
+    justify-content: space-evenly;
+    background: #3B3B3B;
+    transition: 1s;
+}
+
+.box h1 {
+    text-transform: uppercase;  
+    text-align: left;
+    font: normal normal normal 13px/18px Open Sans;
+    letter-spacing: 0px;
+    color: rgb(233, 233, 233);
+    margin-top: 36px;
+    margin-bottom: 33px;
+}
+
+.box ul {
+    padding-left: 15px;
+}
+
+.typ ul {
+    list-style: none;
+    padding: 0;
+}
+
+.typ li {
+    padding-left: 15px;
+    position: relative;
+}
+
+.typ li::before{
+    content: url(./Group\ 41.png);
+    position: absolute;
+    left: 0;
+}
+
+/* colum1 */
+
+.colum1 {
+    margin-left: 45px;
+    max-width: 220px;
+}
+
+
+.info {
+    font: normal normal normal 10px/14px Open Sans;
+    letter-spacing: 0px;
+    color: rgb(233, 233, 233);
+    opacity: 1;
+    margin: 0px 0px;
+}
+
+.info p {
+    margin: 0px 15px;
+}
+.skill {
+    text-align: left;
+    font: normal normal normal 11px/15px Open Sans;
+    letter-spacing: 0px;
+    color: rgb(233, 233, 233);
+    opacity: 1;
+    margin: 0px 0px;
+}
+
+.skill p {
+    margin: 0px 15px;
+}
+
+.work1 {
+    text-align: left;
+    font: normal normal normal 10px/14px Open Sans;
+    letter-spacing: 0px;
+    color:rgb(233, 233, 233);
+    opacity: 1;
+}
+
+.work1 ul {
+    padding-left: 15px;
+    list-style: none;
+}
+
+.work1 li {
+    position: relative;
+    padding-left: 25px;
+}
+
+.work1 li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #1c88f3;
+}
+
+.work1 p{ 
+    padding-left: 25px;
+}
+.work2 {
+    text-align: left;
+    font: normal normal normal 10px/14px Open Sans;
+    letter-spacing: 0px;
+    color: #d4d4d4;
+    opacity: 1;
+}
+
+.work2 ul {
+    padding-left: 15px;
+    list-style: none;
+}
+
+.work2 li {
+    position: relative;
+    padding-left: 25px;
+}
+
+.work2 li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #1c88f3;
+}
+
+.work2 p{
+    padding-left: 25px;
+}
+/* colum2 */
+
+.colum2{
+    max-width: 220px;
+}
+
+.info2 {
+    text-align: left;
+    font: normal normal normal 11px/15px Open Sans;
+    letter-spacing: 0px;
+    color: rgb(233, 233, 233);
+    opacity: 1;
+    margin: 0px 0px;
+    
+}
+
+.infoD {
+    margin-bottom: 17px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.info2 .infoD ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info2 .infoD li {
+    position: relative;
+    padding-left: 45px;
+}
+
+.info2 .infoD li::before {
+    content: url(./idf-logo-full-texttry-0.png);
+    position: absolute;
+    left: 0;
+}
+
+.info2 .infoD li::after {
+    content: url(./Group\ 44.png);
+    position: absolute;
+    right: 8px;
+    bottom: -3px;
+} 
+
+.text {
+    text-align: left;
+    font: normal normal normal 10px/14px Open Sans;
+    letter-spacing: 0px;
+    color: rgb(233, 233, 233);
+    opacity: 1; 
+    transform: matrix(-1, 0, 0, -1, 0, 0);
+}
+
+.tools {
+    text-align: left;
+    font: normal normal normal 10px/14px Open Sans;
+    letter-spacing: 0px;
+    color: rgb(233, 233, 233);
+}
+
+.tools p {
+    margin: 0px 15px;
+}
+
+.academ {
+    text-align: left;
+    font: normal normal normal 10px/14px Open Sans;
+    letter-spacing: 0px;
+    color: rgb(233, 233, 233);
+    opacity: 1;
+}
+
+.academ ul {
+    padding-left: 15px;
+    list-style: none;
+}
+
+.academ li {
+    position: relative;
+    padding-left: 25px;
+    margin-top: 34px;
+}
+
+.academ li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #1c88f3;
+}
+
+.academ p {
+    padding-left: 25px;
+}
+
+.work_h {
+    position: relative;
+}
+
+.work_h .vl {
+    position: absolute;
+    border-left: 2px solid #1c88f3;
+    height: 95px;
+    left: 20px;
+    top: 15px;
+
+  }
+
+  .academ {
+      position: relative;
+  }
+
+  .academ .vl {
+    position: absolute;
+    border-left: 2px solid #1c88f3;
+    height: 105px;
+    left: 20px;
+    top: 15px;
+
+  }
+
+  .academ .vl2 {
+    position: absolute;
+    border-left: 2px solid #1c88f3;
+    height: 80px;
+    left: 20px;
+    top: 136px;
+  }
