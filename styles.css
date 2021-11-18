@@ -1,6 +1,7 @@
 body {
     max-width: 1024px;
     max-height: 870px;
+
 }
 header {
     top: 0px;
@@ -27,9 +28,8 @@ header {
 
  .ava {
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); 
-    border: #3571bb;
+ }
 
-}
 .bio {
     margin-left: 10px;
  }
@@ -67,65 +67,70 @@ header {
 
 .logo {
     display: flex;
-    flex-wrap: nowrap;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-   
-}
-
-.img1 {
-    width: 13px;
-    height: 10px;
-    opacity: 1;
-}
-.img2 {
-    width: 13px;
-    height: 13px;
-    opacity: 1;
-}
-.img3{
-    width: 11px;
-    height: 14px;
-    opacity: 1;
-}
-
-.data {
-    display: flex;
-    margin-left: 10px;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-content: flex-start;
-}
-
-.email {
-    width: 111px;
-    height: 14px;
-    font: normal normal normal 10px/14px Open Sans;
+    align-items: flex-start;
+    font: normal normal normal 10px/14px Open sans;
     letter-spacing: 0px;
     color: #FFFFFF;
     opacity: 1;
-    margin: 5px 0px;
 }
 
-.number {
-    width: 63px;
-    height: 14px;
-    font: normal normal normal 10px/14px Open Sans;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
-    margin: 5px 0px;
+.logo ul { 
+    margin: 5px 0px 5px 10px;
 }
 
-.local {
-    width: 89px;
-    height: 14px;   
-    font: normal normal normal 10px/14px Open Sans;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
-    margin: 5px 0px;
+.logo .mail {
+    list-style: none;
+    padding-left: 15px;
+}
+.logo  .mail li {
+    position: relative;
+    padding-left: 25px;
+
+}
+
+.logo .mail li::before{
+    content: url(./feather\ mail.png);
+    position: absolute;
+    left: -1px;
+    top: 2px;
+    
+}
+
+.logo .phone {
+    list-style: none;
+    padding-left: 15px;
+}
+.logo  .phone li {
+    position: relative;
+    padding-left: 25px;
+
+}
+
+.logo .phone li::before{
+    content: url(./feather\ phone.png);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.logo .map {
+    list-style: none;
+    padding-left: 15px;
+}
+.logo  .map li {
+    position: relative;
+    padding-left: 25px;
+
+}
+
+.logo .map li::before{
+    content: url(./feather\ map\ pin.png);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 /* body */
@@ -176,7 +181,6 @@ header {
 
 
 .info {
-    display: flex;
     font: normal normal normal 10px/14px Open Sans;
     letter-spacing: 0px;
     color: #3B3B3B;
