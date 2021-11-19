@@ -25,7 +25,7 @@ button {
     color: rgb(233, 233, 233);
     border: none;
     border-radius: 4px;
-    font-size: 1em;
+    font-size: 14px;
     margin-top: 1%;
     outline: none;
     transition-duration: 1s;
@@ -47,7 +47,19 @@ button:hover {
 
  .ava {
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); 
- }
+    animation-name: my-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+ @keyframes my-animation{
+    from { clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); } 
+    to {clip-path: circle(45% at 50% 50%); }
+}
+ /* .ava:hover {
+    clip-path: circle(45% at 50% 50%);
+    
+ } */
 
 .bio {
     margin-left: 10px;
@@ -380,7 +392,7 @@ button:hover {
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 12px;
+    width: 13px;
     height: 12px;
     border-radius: 50%;
     background: #1c88f3;
@@ -412,7 +424,7 @@ button:hover {
     border-left: 2px solid #1c88f3;
     height: 105px;
     left: 20px;
-    top: 15px;
+    top: 16px;
 
   }
 
@@ -421,5 +433,5 @@ button:hover {
     border-left: 2px solid #1c88f3;
     height: 80px;
     left: 20px;
-    top: 136px;
+    top: 138px;
   }
