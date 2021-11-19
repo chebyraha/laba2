@@ -467,7 +467,7 @@ button:hover {
     padding: 15px;
     margin: 5px;
     display: flex;
-    position: relative;
+    
 }
 
 .img-box {
@@ -479,4 +479,5 @@ button:hover {
      
 .img-box:hover img { 
     transform: scale(2);
+   
 }
