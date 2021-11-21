@@ -1,12 +1,11 @@
-body {
-    max-width: 1024px;
-    max-height: 1000px;
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 header {
     top: 0px;
     left:0px;
-    width: 1024px;
     height: 190px;
     background: #2f4b6e 0% 0% no-repeat padding-box;
     opacity: 1;
@@ -46,22 +45,24 @@ button:hover {
     margin-left: 150px;
  }
 
- .ava {
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); 
-    animation-name: my-animation;
+ .Photo {
+    clip-path: polygon(50% 5%, 90% 25%, 90% 75%, 50% 95%, 10% 75%, 10% 25%);
+    /* animation-name: my-animation;
     animation-duration: 2s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite; */
+    transition:  all 1s ease-in-out;
+
 }
 
- @keyframes my-animation{
-    from { clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); } 
-    to {clip-path: circle(45% at 50% 50%); }
-}
+ /* @keyframes my-animation{
+    0% { clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); } 
+    100% {clip-path: circle(45% at 50% 50%); }
+} */
 
- /* .ava:hover {
-    clip-path: circle(45% at 50% 50%);
+ .Photo:hover {
+    clip-path: polygon(50% 5%, 90% 5%, 90% 95%, 50% 95%, 10% 95%, 10% 5%);
     
- } */
+ }
 
 .bio {
     margin-left: 10px;
@@ -168,7 +169,7 @@ button:hover {
 /* body */
 
 .box {
-    width: 1024px;
+    
     display: flex;
     justify-content: space-evenly;
     background: #F4FCff;
@@ -439,7 +440,7 @@ button:hover {
 /* gallery */
 
 .gallery {
-    width: 1024px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -478,6 +479,6 @@ button:hover {
 }
      
 .img-box:hover img { 
-    transform: scale(2);
+    transform: scale(1.2);
    
 }
