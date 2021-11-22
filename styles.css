@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    
+
 }
 header {
     top: 0px;
@@ -16,10 +22,18 @@ header {
     position: relative;
 }
 
+.content {
+    background: #F4FCff;
+    color: #3B3B3B;
+    letter-spacing: 0px;
+    opacity: 1;
+    transition: 1s;
+}
+
 #checkbox{
     position: fixed;
     top: 20px;
-    right: 20px;
+    left: 20px;
     appearance: none;
     width: 40px;
     height: 20px;
@@ -32,12 +46,12 @@ header {
 #checkbox::before{
     content: '';
     position: absolute;
-    width: 20px;
+    width: 15px;
     height: 15px;
     background-color:white;
     border-radius: 35px;
     top: 2px;
-    left: 2px;
+    left: 4px;
     cursor: pointer;
     transition: .3s linear;
 }
@@ -48,24 +62,13 @@ header {
     transition: 1s;
 }
 
-.content {
-    background: #F4FCff;
-    color: #3B3B3B;
-    letter-spacing: 0px;
-    opacity: 1;
-    transition: 1s;
-}
-
 #checkbox:checked::before{
-    left: 19px;
+    left: 22px;
 }
 
 #checkbox:checked{
     background: rgb(12, 177, 81);
 }
-
-
-
 
 /* container1 */
 
@@ -75,36 +78,34 @@ header {
     flex-direction: row;
     align-items: center;
     margin-left: 150px;
- }
+}
 
- .ava {
+.ava {
     clip-path: polygon(50% 5%, 90% 25%, 90% 75%, 50% 95%, 10% 75%, 10% 25%);
     /* animation-name: my-animation;
     animation-duration: 2s;
     animation-iteration-count: infinite; */
     transition:  all 1s ease-in-out;
-
 }
 
- /* @keyframes my-animation{
-    0% { clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); } 
-    100% {clip-path: circle(45% at 50% 50%); }
-} */
-
- .ava:hover {
+.ava:hover {
     clip-path: polygon(50% 5%, 90% 5%, 90% 95%, 50% 95%, 10% 95%, 10% 5%);
     
- }
+}
 
 .bio {
     margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
  }
 
 .name {
     width: 161px;
     height: 18px;
     text-transform: uppercase;
-    font: normal normal bold 13px/18px Open Sans;
+    font: normal normal bold 13px/18px;
     letter-spacing: 0px;
     color: #ffffff;
     opacity: 1;
@@ -112,9 +113,7 @@ header {
 }
  
 .position {
-    width: 71px;
-    height: 14px;
-    font: normal normal normal 10px/14px Open Sans;
+    font-size: 14px;
     letter-spacing: 0px;
     color: #FFFFFF;
     opacity: 1;
@@ -134,7 +133,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    font: normal normal normal 10px/14px Open sans;
+    font: normal normal normal 10px/14px;
     letter-spacing: 0px;
     color: #FFFFFF;
     opacity: 1;
@@ -213,9 +212,9 @@ header {
 .box h1 {
     text-transform: uppercase;  
     text-align: left;
-    font: normal normal normal 13px/18px Open Sans;
+    font-size: 18px;
     letter-spacing: 0px;
-    ;
+    font-weight: 300;
     margin-top: 36px;
     margin-bottom: 33px;
 }
@@ -249,7 +248,7 @@ header {
 
 
 .info {
-    font: normal normal normal 10px/14px Open Sans;
+    font: normal normal normal 10px/14px;
     margin: 0px 0px;
 }
 
@@ -258,7 +257,7 @@ header {
 }
 .skill {
     text-align: left;
-    font: normal normal normal 11px/15px Open Sans;
+    font: normal normal normal 11px/15px;
     letter-spacing: 0px;
     margin: 0px 0px;
 }
@@ -282,7 +281,7 @@ header {
 
 .work1 {
     text-align: left;
-    font: normal normal normal 10px/14px Open Sans;
+    font: normal normal normal 10px/14px;
     
 
 }
@@ -314,7 +313,7 @@ header {
 }
 .work2 {
     text-align: left;
-    font: normal normal normal 10px/14px Open Sans;
+    font: normal normal normal 10px/14px;
     color: #989898;
 }
 
@@ -351,7 +350,7 @@ header {
 
 .info2 {
     text-align: left;
-    font: normal normal normal 11px/15px Open Sans;
+    font: normal normal normal 11px/15px;
     margin: 0px 0px;
     
 }
@@ -395,13 +394,13 @@ header {
 }
 .text {
     text-align: left;
-    font: normal normal normal 10px/14px Open Sans; 
+    font: normal normal normal 10px/14px; 
     transform: matrix(-1, 0, 0, -1, 0, 0);
 }
 
 .tools {
     text-align: left;
-    font: normal normal normal 10px/14px Open Sans;
+    font: normal normal normal 10px/14px;
     
 }
 
@@ -411,7 +410,7 @@ header {
 
 .academ {
     text-align: left;
-    font: normal normal normal 10px/14px Open Sans;
+    font: normal normal normal 10px/14px;
 }
 
 .academ ul {
@@ -440,15 +439,6 @@ header {
     padding-left: 25px;
 }
 
-
-
-
-
-
-
-
-
-
 /* gallery */
 
 .gallery {
@@ -464,7 +454,8 @@ header {
 }
 
 .gallery h1 {
-    font: normal normal normal 13px/18px Open Sans;
+    font-size: 18px;
+    text-transform:uppercase;
     margin-top: 36px;
     margin-bottom: 33px;
 }
