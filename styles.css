@@ -6,9 +6,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Source Sans Pro', sans-serif;
-    
-
 }
+
 header {
     top: 0px;
     left:0px;
@@ -98,8 +97,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
- }
+}
 
 .name {
     width: 161px;
@@ -197,6 +195,15 @@ header {
     transform: translateY(-50%);
 }
 
+
+.logo ul:hover {
+    cursor: pointer;
+    box-shadow: 4px 5px 5px;
+    color: rgb(128, 218, 240);
+    transition: 1s;
+    border-radius: 6px;
+}
+
 /* body */
 
 .box {
@@ -209,10 +216,10 @@ header {
     transition: 1s;
 }
 
-.box h1 {
+.content h1 {
     text-transform: uppercase;  
     text-align: left;
-    font-size: 18px;
+    font-size: 14px;
     letter-spacing: 0px;
     font-weight: 300;
     margin-top: 36px;
@@ -237,6 +244,9 @@ header {
     content: url(./img/Group\ 41.png);
     position: absolute;
     left: 0;
+    top: -2px ;
+   
+
 }
 
 /* colum1 */
@@ -281,9 +291,7 @@ header {
 
 .work1 {
     text-align: left;
-    font: normal normal normal 10px/14px;
-    
-
+    font-size: 14px;
 }
 
 .work1 ul {
@@ -313,7 +321,7 @@ header {
 }
 .work2 {
     text-align: left;
-    font: normal normal normal 10px/14px;
+    font-size: 14px;
     color: #989898;
 }
 
@@ -331,8 +339,7 @@ header {
     content: "";
     position: absolute;
     left: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 3px;
     width: 12px;
     height: 12px;
     border-radius: 50%;
@@ -451,13 +458,6 @@ header {
     align-items: center;
     align-items: center;
     transition: 1s;     
-}
-
-.gallery h1 {
-    font-size: 18px;
-    text-transform:uppercase;
-    margin-top: 36px;
-    margin-bottom: 33px;
 }
   
 .gallery img {
