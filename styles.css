@@ -19,7 +19,7 @@ header {
     align-content: space-around;
     align-items: center;
     position: relative;
-    padding: 0px 150px;
+    padding: 0px 110px;
 }
 
 .content {
@@ -69,6 +69,26 @@ header {
 
 #checkbox:checked{
     background: rgb(12, 177, 81);
+}
+
+.lang {
+    position: fixed;
+    left: 70px;
+    top: 19px;
+    color: #222;
+}
+
+.lang a {
+    color: #222222;
+    text-decoration: none;
+    cursor: pointer;
+}
+ 
+.lang a:hover {
+    color: #e9e9e9;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: 1s;
 }
 
 /* container1 */
@@ -217,18 +237,21 @@ header {
     float: left;
     padding: 12px 20px;
     margin-right: 5px;
+    margin-bottom: 5px;
     cursor: pointer;
     transition: background-color .3s;
     text-transform: uppercase;  
     text-align: left;
     font-size: 14px;
     font-weight: 300;
+    border-radius: 7px;
   }
   
   .tabbed > label:hover,
   .tabbed > input:checked + label {
     background: #2f4b6e;
     color: #e9e9e9;
+    transition: 1s;
   }
   
   .tabs {
@@ -276,7 +299,15 @@ header {
 .box ul {
     padding-left: 15px;
 }
+label {
+    position: relative;
+}
 
+.tabbed label::before {
+    content: url(./img/Group\ 41.png);
+    position: absolute;
+    left: 5px;
+}
 .typ ul {
     list-style: none;
     padding: 0;
