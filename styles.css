@@ -269,7 +269,7 @@ header {
 .tabbed > label {
     display: block;
     float: left;
-    padding: 12px 20px;
+    padding: 12px 12px 12px 25px;
     margin-right: 5px;
     margin-bottom: 5px;
     cursor: pointer;
@@ -346,7 +346,7 @@ label {
 .tabbed label::before {
     content: url(./img/Group\ 41.png);
     position: absolute;
-    left: 5px;
+    left: 10px;
 }
 .typ ul {
     list-style: none;
@@ -594,6 +594,7 @@ label {
 /* gallery */
 
 .gallery {
+    margin-top: -10px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
