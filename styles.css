@@ -11,9 +11,7 @@
 }
 
 header {
-    top: 0px;
-    left:0px;
-    background: #2f4b6e 0% 0% no-repeat padding-box;
+    background: #2f4b6e;
     opacity: 1;
     display: flex;
     flex-wrap: wrap;
@@ -21,12 +19,16 @@ header {
     align-content: space-around;
     align-items: center;
     position: relative;
+    padding: 0px 150px;
 }
 
 .content {
     background: #F4FCff;
     color: #3B3B3B;
     transition: 1s;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 #checkbox{
@@ -76,7 +78,7 @@ header {
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    margin-left: 150px;
+    
 }
 
 .ava {
@@ -118,7 +120,7 @@ header {
     flex-direction: row;
     align-content: space-around;
     flex-wrap: wrap;
-    margin-right: 150px;
+    
 }
 
 .logo {
@@ -198,15 +200,69 @@ header {
 
 /* body */
 
-.box {
-    
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: space-evenly;
-    /* background: #F4FCff; */
-    transition: 1s;
-}
+/* ::selection {
+    background-color: #4EC6DE;
+  } */
+  
+  .tabbed {
+    margin: 36px auto;
+  }
+  
+  .tabbed > input {
+    display: none;
+  }
+  
+  .tabbed > label {
+    display: block;
+    float: left;
+    padding: 12px 20px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: background-color .3s;
+    text-transform: uppercase;  
+    text-align: left;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  
+  .tabbed > label:hover,
+  .tabbed > input:checked + label {
+    background: #2f4b6e;
+    color: #e9e9e9;
+  }
+  
+  .tabs {
+    clear: both;
+    perspective: 600px;
+  }
+  
+  .tabs > div {
+    position: absolute;
+    border: 2px solid #2f4b6e;
+    padding: 10px 30px 40px;
+    line-height: 1.4em;
+    opacity: 0;
+    transform: rotateX(-20deg);
+    transform-origin: top center;
+    transition: opacity .3s, transform 1s;
+    z-index: 0;
+    max-width: 850px;
+    border-radius: 10px;
+  }
+  
+  #tab-nav-1:checked ~ .tabs > div:nth-of-type(1),
+  #tab-nav-2:checked ~ .tabs > div:nth-of-type(2),
+  #tab-nav-3:checked ~ .tabs > div:nth-of-type(3),
+  #tab-nav-4:checked ~ .tabs > div:nth-of-type(4),
+  #tab-nav-5:checked ~ .tabs > div:nth-of-type(5),
+  #tab-nav-6:checked ~ .tabs > div:nth-of-type(6)
+  {
+    transform: rotateX(0);
+    opacity: 1;
+    z-index: 1;
+    transition: 0.5s opacity ease-in, 0.8s transform ease;
+    position: relative;
+  }
 
 .content h1 {
     text-transform: uppercase;  
@@ -242,15 +298,9 @@ header {
 
 /* colum1 */
 
-.colum1 {
-    margin-left: 45px;
-    max-width: 220px;
-}
-
 
 .info {
     font-size: 14px;
-    margin: 0px 0px;
 }
 
 .info p {
@@ -259,7 +309,7 @@ header {
 .skill {
     text-align: left;
     font-size: 15px;
-    margin: 0px 0px;
+    
 }
 
 .line {
@@ -353,6 +403,7 @@ header {
     text-align: left;
     font-size: 15px;
     margin: 20px 0px;
+    padding-right: 10px;
     
 }
 
@@ -406,12 +457,14 @@ header {
     font-size: 15px;
     margin: 20px 0px;
     position: relative;
+    padding: 0px 10px;
 }
 
 .infoD1 {
     width: 55px;
     height: 55px;
     border-radius: 50%;
+    left: 2px;
     float: left;
     shape-outside:circle(50%);
     padding: 5px;
@@ -477,7 +530,6 @@ header {
     align-content: stretch;
     justify-content: space-around;
     align-items: center;
-    align-items: center;
     transition: 1s;     
 }
   
@@ -493,7 +545,8 @@ header {
     padding: 15px;
     margin: 5px;
     display: flex;
-    
+    flex-wrap: wrap;
+
 }
 
 .img-box {
